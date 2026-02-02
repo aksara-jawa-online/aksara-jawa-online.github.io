@@ -14,7 +14,6 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://aksara-jawa-online.github.io/">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Translate Aksara Jawa Online - Konverter Latin ke Huruf Jawa Lengkap">
     <meta property="og:description"
         content="Tool translate aksara jawa ke latin paling lengkap. Gratis, cepat, ada virtual keyboard. Tidak perlu install aplikasi.">
@@ -23,18 +22,14 @@
     <meta property="og:site_name" content="Aksara Jawa Translator">
     <meta property="og:url" content="https://aksara-jawa-online.github.io/">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Translate Aksara Jawa Online Gratis">
     <meta name="twitter:description"
         content="Konverter aksara jawa ke latin dan sebaliknya. Lebih lengkap, lebih cepat.">
 
-    <!-- Favicon -->
-
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ꦗ</text></svg>">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -43,7 +38,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Schema Markup - WebApplication -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -71,7 +65,6 @@
     }
     </script>
 
-    <!-- Schema Markup - WebSite -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -86,7 +79,6 @@
     }
     </script>
 
-    <!-- Schema Markup - HowTo -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -117,10 +109,52 @@
         ]
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Bagaimana cara translate aksara jawa ke latin?", 
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Caranya gampang banget! Pilih mode 'Aksara → Latin' di atas, lalu ketik atau paste aksara jawa di kotak input. Hasil terjemahan langsung muncul di sebelah kanan. Bisa juga pakai virtual keyboard kalau mau ketik aksara jawa manual."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Apakah bisa translate latin ke aksara jawa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa dong! Pilih mode 'Latin → Aksara' lalu ketik kata dalam huruf latin biasa. Hasilnya langsung dikonversi ke aksara jawa lengkap dengan sandangan dan pasangannya."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Apa itu sandangan dalam aksara jawa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sandangan itu tanda diakritik untuk mengubah bunyi vokal pada aksara jawa. Contoh: huruf 'ka' (ꦏ) ditambah sandangan 'i' jadi 'ki' (ꦏꦶ). Ada beberapa jenis sandangan seperti wulu (i), suku (u), taling (é), pepet (ê), dan lainnya."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Apa itu pasangan aksara jawa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pasangan adalah bentuk khusus aksara jawa yang dipakai untuk menghilangkan vokal 'a' pada suku kata sebelumnya. Contoh: kata 'bakso' ditulis dengan aksara 'ba' lalu pasangan 'sa' di bawahnya."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Apakah tool ini gratis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "100% gratis! Tidak perlu daftar, tidak perlu bayar. Langsung pakai kapan saja."
+        }
+      }]
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Theme Toggle -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2">
@@ -141,7 +175,6 @@
     </button>
 
     <div class="container">
-        <!-- Header -->
         <header class="header">
             <div class="logo">
                 <span class="logo-icon">ꦗ</span>
@@ -150,9 +183,7 @@
             <p class="tagline">Translate aksara jawa ke latin atau latin ke aksara jawa — Gratis & Lengkap!</p>
         </header>
 
-        <!-- Main Translator -->
         <main class="translator-section">
-            <!-- Direction Toggle -->
             <div class="direction-toggle">
                 <button class="direction-btn active" data-direction="latin-to-jawa">
                     <span>Latin</span>
@@ -174,9 +205,7 @@
                 </button>
             </div>
 
-            <!-- Translator Cards -->
             <div class="translator-grid">
-                <!-- Input Card -->
                 <div class="translator-card input-card">
                     <div class="card-header">
                         <h2 id="inputLabel">Ketik Latin</h2>
@@ -194,7 +223,6 @@
                     <div class="char-count"><span id="charCount">0</span> karakter</div>
                 </div>
 
-                <!-- Output Card -->
                 <div class="translator-card output-card">
                     <div class="card-header">
                         <h2 id="outputLabel">Hasil Aksara Jawa</h2>
@@ -222,7 +250,6 @@
                 </div>
             </div>
 
-            <!-- Virtual Keyboard Toggle -->
             <button class="keyboard-toggle" id="keyboardToggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2">
@@ -240,7 +267,6 @@
                 <span>Virtual Keyboard Aksara Jawa</span>
             </button>
 
-            <!-- Virtual Keyboard -->
             <div class="virtual-keyboard hidden" id="virtualKeyboard">
                 <div class="keyboard-header">
                     <span>Keyboard Aksara Jawa</span>
@@ -299,7 +325,6 @@
             </div>
         </main>
 
-        <!-- Features Section -->
         <section class="features-section">
             <h2>Kenapa Pakai Translator Ini?</h2>
             <div class="features-grid">
@@ -336,7 +361,6 @@
             </div>
         </section>
 
-        <!-- Aksara Chart -->
         <section class="chart-section">
             <h2>Tabel Aksara Jawa Lengkap (Hanacaraka)</h2>
             <p class="section-desc">Daftar 20 huruf dasar aksara jawa dengan pasangan dan bacaannya</p>
@@ -476,7 +500,6 @@
             </div>
         </section>
 
-        <!-- SEO Content Sections -->
         <article class="seo-content">
             <section class="content-section">
                 <h2>Translate Aksara Jawa ke Latin — Cara Paling Gampang</h2>
@@ -562,8 +585,7 @@
                 <h2>Translate Aksara Jawa Online Tanpa Ribet</h2>
                 <p><strong>The Truth:</strong> Tidak perlu download APK, tidak perlu install font khusus. Tool
                     <strong>translate aksara jawa online</strong> ini langsung jalan di browser — Chrome, Firefox,
-                    Safari, semuanya support.
-                </p>
+                    Safari, semuanya support.</p>
                 <p>Ada yang tanya, "Bisa pakai di HP?" Bisa banget! Responsive design-nya sudah dioptimasi buat layar
                     kecil. Virtual keyboard aksara jawa-nya tetap nyaman dipakai di touchscreen.</p>
 
@@ -665,8 +687,7 @@
             </section>
         </article>
 
-        <!-- FAQ Section -->
-        <section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+        <section class="faq-section">
 
             <h2>Pertanyaan yang Sering Ditanyakan</h2>
             <div class="faq-list">
@@ -700,7 +721,6 @@
             </div>
         </section>
 
-        <!-- History Section -->
         <section class="history-section">
             <h2>Riwayat Terjemahan</h2>
             <div class="history-list" id="historyList">
@@ -709,20 +729,17 @@
             <button class="clear-history-btn hidden" id="clearHistoryBtn">Hapus Semua Riwayat</button>
         </section>
 
-        <!-- Footer -->
         <footer class="footer">
             <p>Made with ❤️ untuk melestarikan budaya Jawa</p>
             <p class="copyright">© 2026 Aksara Jawa Translator</p>
         </footer>
     </div>
 
-    <!-- Toast Notification -->
     <div class="toast hidden" id="toast">
         <span id="toastMessage">Berhasil disalin!</span>
     </div>
 
     <script src="translator.js"></script>
 </body>
-
 
 </html>
